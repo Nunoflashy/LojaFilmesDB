@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ProjetoProgramacao" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/ProjetoProgramacao" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/ProjetoProgramacao" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="include/sds" />
+			<Add directory="/home/nuno/Desktop/ProjetoProgramacao/" />
+			<Add directory="vector" />
+		</Compiler>
+		<Linker>
+			<Add directory="src/sds" />
+		</Linker>
+		<Unit filename="Nuklear/demo/sdl_opengl2/nuklear_sdl_gl2.h" />
+		<Unit filename="Nuklear/nuklear.h" />
+		<Unit filename="include/App.h" />
+		<Unit filename="include/Cliente.h" />
+		<Unit filename="include/ClienteDB.h" />
+		<Unit filename="include/ClienteFilmeDB.h" />
+		<Unit filename="include/Data.h" />
+		<Unit filename="include/Filme.h" />
+		<Unit filename="include/FilmeDB.h" />
+		<Unit filename="include/Logger.h" />
+		<Unit filename="include/MainMenu.h" />
+		<Unit filename="include/MenuManager.h" />
+		<Unit filename="include/MessageInfoLevel.h" />
+		<Unit filename="include/Util.h" />
+		<Unit filename="include/events/ClienteDBEvents.h" />
+		<Unit filename="include/events/FilmeDBEvents.h" />
+		<Unit filename="src/Cliente.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/ClienteDB.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/ClienteFilmeDB.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Data.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Filme.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/FilmeDB.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Logger.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/MainMenu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/MenuManager.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="src/Util.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vector/vec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="vector/vec.h" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

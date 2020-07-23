@@ -1,0 +1,12 @@
+#!/bin/bash
+
+while true; 
+do 
+    cat ../data/log.log  | \
+    awk '/DEBUG/    {print "\033[38m" $0 "\033[39m"}
+         /INFO/    {print "\033[32m" $0 "\033[39m"}
+         /AVISO/ {print "\033[33m" $0 "\033[39m"}
+         /ERRO/   {print "\033[31m" $0 "\033[39m"}
+         /CRITICO/   {print "\033[31m" $0 "\033[39m"}'
+    sleep 2 && clear; 
+done
